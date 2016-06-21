@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zcp.recyclerviewdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LineActivity"
+            android:label="@string/title_activity_line"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LineActivity2"
+            android:label="滑动显示隐藏布局"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GridActivity"
+            android:label="@string/title_activity_grid"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StaggeredActivity"
+            android:label="@string/title_activity_staggerde"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+    </application>
+
+</manifest>

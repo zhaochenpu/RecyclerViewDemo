@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RecyclerViewDemo</string>
+    <string name="title_activity_line">线性布局</string>
+    <string name="title_activity_grid">网格布局</string>
+    <string name="title_activity_staggerde">交错网格布局</string>
+</resources>
