@@ -152,7 +152,6 @@ public class LineActivity2 extends AppCompatActivity {
                         mAdapter.removeItem(viewHolder.getAdapterPosition());
                         remove=false;
                     }
-
                 }
                 super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
             }
@@ -260,7 +259,7 @@ public class LineActivity2 extends AppCompatActivity {
             if(holder.itemView.getScrollX()!=0){
                 ((HorizontalScrollView)holder.itemView).fullScroll(View.FOCUS_UP);//如果item的HorizontalScrollView没在初始位置，则滚动回顶部
             }
-            holder.ll.setMinimumWidth(screenwidth);
+            holder.ll.setMinimumWidth(screenwidth);//设置LinearLayout宽度为屏幕宽度
             holder.tv.setText("图"+position);
             Picasso.with(LineActivity2.this).load(meizis.get(position).getUrl()).into(holder.iv);
 
