@@ -84,7 +84,9 @@ public class StaggeredActivity extends AppCompatActivity {
             public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
                 int from=viewHolder.getAdapterPosition();
                 int to=target.getAdapterPosition();
-                Collections.swap(meizis,from,to);
+                Meizi moveItem=meizis.get(from);
+                meizis.remove(from);
+                meizis.add(to,moveItem);
                 mAdapter.notifyItemMoved(from,to);
                 return true;
             }
